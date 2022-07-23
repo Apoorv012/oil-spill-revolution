@@ -1,15 +1,3 @@
-
-import Papa from 'papaparse';
-
-async function getData() {
-  const response = await fetch("incidents.csv");
-  const data = await response.text();
-
-  const result = Papa.parse(data)
-  console.log(result);
-}
-
-getData();
 // Making a map and tiles
 //   const map = L.map('myMap').setView([0, 0], 1);
 const map = L.map("myMap", {
