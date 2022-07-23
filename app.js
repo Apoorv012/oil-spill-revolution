@@ -20,7 +20,6 @@ map.on("click", function (e) {
 });
 
 // Making a marker with a custom icon
-
 const issIcon = L.icon({
   iconUrl: 'iss200.png',
   iconSize: [50, 32],
