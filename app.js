@@ -10,13 +10,13 @@ const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 const tiles = L.tileLayer(tileUrl, { attribution });
 tiles.addTo(map);
 
-map.on("click", function (e) {
-  var popLocation = e.latlng;
-  var popup = L.popup()
-    .setLatLng(popLocation)
-    .setContent(`<p>${popLocation}</p>`)
-    .openOn(map);
-});
+// map.on("click", function (e) {
+//   var popLocation = e.latlng;
+//   var popup = L.popup()
+//     .setLatLng(popLocation)
+//     .setContent(`<p>${popLocation}</p>`)
+//     .openOn(map);
+// });
 
 // Making a marker with a custom icon
 fetch("incidents.json")
