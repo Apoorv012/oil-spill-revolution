@@ -25,6 +25,6 @@ fetch("incidents.json")
   .then((res) => res.json())
   .then((incidents) => {
     for (const incident of incidents) {
-      L.circle([incident.lat, incident.lon], { radius: 1 }).addTo(map);
+      L.circle([incident.lat, incident.lon], { radius: 50000 }).addTo(map);
     }
   });
